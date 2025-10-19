@@ -51,13 +51,16 @@ Then open your browser at 👉 **http://localhost:8501**
 
 ## 🧩 Architecture Overview
 
+```markdown
+## 🧩 Architecture Overview
+
 ```mermaid
 flowchart TD
-    A[Upload audio file (.wav/.mp3/.ogg)] --> B[Audio preprocessing]
-    B --> C[Embedding extraction (ECAPA-TDNN)]
+    A[Upload audio file (wav, mp3, ogg)] --> B[Audio preprocessing]
+    B --> C[Embedding extraction: ECAPA-TDNN]
     C --> D[PyTorch classifier]
     D --> E[Predicted speaker output]
-```
+
 
 ---
 
